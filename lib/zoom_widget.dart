@@ -441,19 +441,7 @@ class _ZoomState extends State<Zoom> with TickerProviderStateMixin {
                           child: Container(
                             decoration: BoxDecoration(
                                 color: widget.canvasColor,
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.black45,
-                                    blurRadius:
-                                        20.0, // has the effect of softening the shadow
-                                    spreadRadius:
-                                        5.0, // has the effect of extending the shadow
-                                    offset: Offset(
-                                      10.0, // horizontal, move right 10
-                                      10.0, // vertical, move down 10
-                                    ),
-                                  )
-                                ]),
+                                ),
                             width: widget.width,
                             height: widget.height,
                             child: widget.child,
